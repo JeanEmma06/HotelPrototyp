@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "prestart": "chmod +x node_modules/.bin/ts-node",
     "start": "nodemon index.js",
     "build": "npm i"
   },
