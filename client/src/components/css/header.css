@@ -1,0 +1,189 @@
+.header {
+  background-image: url("https://news.airbnb.com/wp-content/uploads/sites/4/2020/05/HotelTonight_SwankyHotelLobby.jpg");
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.headerList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.headerListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f6f6f6;
+  }
+
+  &.active {
+    background-color: #3d4043;
+    color: #fff;
+
+    &:hover {
+      background-color: #37424e;
+    }
+  }
+
+  span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.headerBtn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c3137;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #161616;
+  }
+}
+
+.headerSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerSearchItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.headerSearchInput {
+  width: 300px;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.headerIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  color: #f0e9e9;
+}
+
+.headerSearchText {
+  width: 240px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f6f6f6;
+  }
+}
+
+.date {
+  position: absolute;
+  top: 270px;
+  left: 600px;
+  z-index: 999;
+
+  .rdrCalendarWrapper {
+    width: 600px;
+    height: 400px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .rdrDateRangePickerWrapper {
+    padding: 24px;
+  }
+
+  .rdrDateDisplayWrapper {
+    margin-bottom: 16px;
+  }
+
+  .rdrDefinedRangesWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .rdrDefinedRangeWrapper {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #f6f6f6;
+    }
+  }
+
+  .rdrDateDisplayItem {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .date {
+    position: absolute;
+    top: 360px;
+    left: 100px;
+    z-index: 999;
+  }
+}

@@ -1,0 +1,121 @@
+.navbar {
+  background-color: #ffffffc1;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #162e48;
+}
+
+
+.navItems {
+  display: flex;
+  align-items: center;
+}
+
+
+.navButton {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0c0b0b;
+  background-color: #ebd69f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navButton:hover {
+  background-color: #d3863d;
+}
+
+.profilePicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.navLink {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  margin-left: 5px;
+}
+
+
+.dropdown-toggle:hover::after,
+.dropdown-toggle:focus::after {
+  transform: rotate(180deg); /* Rotate the arrow icon on hover or focus */
+  transition: transform 0.5s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  transform: translateY(10px);
+  transition: opacity 0.3s, visibility 0s linear 0.3s, transform 0.3s;
+  z-index: 1;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f5f5f5;
+  color: rgb(238, 191, 38); /* Change the color on hover or focus */
+}

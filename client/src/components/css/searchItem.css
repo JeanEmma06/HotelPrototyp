@@ -1,0 +1,168 @@
+.searchItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.siImg {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 24px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.siDesc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.siTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.siDistance {
+  font-size: 16px;
+  color: #999;
+  margin: 0;
+}
+
+.siTaxiOp {
+  font-size: 16px;
+  background-color: #008009;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.siSubtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.siFeatures {
+  font-size: 16px;
+  margin: 0;
+  color: #999;
+}
+
+.siCancelOp {
+  font-size: 16px;
+  color: #008009;
+  font-weight: 600;
+  margin: 0;
+}
+
+.siCancelOpSubtitle {
+  font-size: 16px;
+  color: #008009;
+  margin: 0;
+}
+
+.siDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.siRating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.siRating span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.siRating button {
+  background-color: #4c5257;
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.siDetailTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 8px;
+}
+
+.siPrice {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #434b51;
+}
+
+.siTaxOp {
+  font-size: 16px;
+  color: #999;
+  margin: 0;
+}
+
+.siCheckButton {
+  background-color: #40464a;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.siCheckButton:hover {
+  background-color: #b3d258;
+}
+
+@media only screen and (max-width: 768px) {
+  .searchItem {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .siImg {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .siDesc {
+    margin-right: 0;
+  }
+
+  .siDetails {
+    align-items: stretch;
+    margin-top: 16px;
+  }
+
+  .siPrice {
+    font-size: 20px;
+  }
+
+  .siCheckButton {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}

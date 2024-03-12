@@ -1,0 +1,120 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lsTitle{
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.lsItem{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lsItem>label{
+  font-size: 16px;
+  color: #555;
+}
+
+.lsItem>input, .lsItem>span{
+  height: 40px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.lsItem>input:focus, .lsItem>span:focus{
+  outline: none;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lsItem>span{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.lsOptions{
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lsOptionItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 16px;
+  align-items: center;
+}
+
+.lsOptionText{
+  font-weight: 500;
+}
+
+.lsOptionInput{
+  width: 70px;
+  height: 40px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.lsOptionInput:focus{
+  outline: none;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.listSearch>button{
+  padding: 15px;
+  background-color: #5d7c93;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.listSearch>button:hover{
+  background-color: #50575c;
+}
+
+.listResult {
+  flex: 3;
+}

@@ -1,0 +1,177 @@
+/* Styles for the main container */
+.containerRoom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for the hotel name */
+.rhotelName h1 {
+  font-size: 32px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for the hotel address */
+.hotelAddress {
+  display: flex;
+  align-items: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+.hotelAddress svg {
+  margin-right: 5px;
+}
+
+/* Styles for the room container */
+.rContainerRoom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* Styles for the room detail and reservation section */
+.rDetailReservation {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.infoRoom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.infoRoom svg {
+  margin-right: 10px;
+}
+
+.infoRoom h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.detailRoom {
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.imgRoom {
+  display: flex;
+}
+
+.rhotelImgWrapper {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.rhotelImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the payment section */
+.rPayment {
+  flex-basis: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.priceByNight {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.priceByNight small {
+  font-size: 14px;
+  color: #999;
+}
+
+.detailDates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detailDates>span {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.detailDates>span:focus{
+  outline: none;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+.detailDates>span{
+  height: 40px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Button style */
+.rPayment button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.rPayment button:hover {
+  background-color: #555;
+}
+
+/* Price detail section */
+.detailPrice {
+  margin-top: 20px;
+}
+
+.dPrice {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.dPrice_item {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Total price section */
+.dTotal {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 0 10px;
+  align-items: center;
+  font-weight: bold;
+}

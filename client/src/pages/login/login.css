@@ -1,0 +1,126 @@
+.login {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Bebas Neur Regular', sans-serif;
+  background: linear-gradient(135deg, #f1ef48 0%, #d8d8d8 100%);
+}
+
+.login__container {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 3em;
+}
+
+.logo_login {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  margin-bottom: 3em;
+}
+
+.logo_login img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #f2f8eb;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.login .email {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: -3em;
+  margin-bottom: 2em;
+}
+
+.login .email input {
+  outline: none;
+  border: none;
+}
+
+
+.login .email input{
+  color: black;
+  font-size: 0.9em;
+}
+
+.login .password {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-bottom: 2em;
+}
+
+.login .password input {
+  outline: none;
+  border: none;
+}
+
+.login .password input{
+  color: black;
+  font-size: 0.9em;
+}
+
+.login .password .show-hide {
+  margin-right: -5em;
+}
+
+.login_btn {
+  padding: 1em;
+  background: #eec476;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-weight: 900;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+}
+
+.login_btn:hover {
+  background: #bda88d;
+  color: #fff;
+}
+
+.login .email i,
+.login .password i {
+  transition: transform 0.3s ease;
+}
+
+.login .email i:hover,
+.login .password i:hover {
+  transform: scale(1.2);
+}
+
+.login .sec-2,
+.login .se-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}

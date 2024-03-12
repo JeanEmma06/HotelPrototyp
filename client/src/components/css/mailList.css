@@ -1,0 +1,64 @@
+.mail {
+  background-image: url("https://news.airbnb.com/wp-content/uploads/sites/4/2020/05/HotelTonight_SwankyHotelLobby.jpg");
+  background-size: cover;
+  width: 100%;
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  text-align: center; /* Aligne le texte au centre */
+}
+
+.mailTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mailDesc {
+  font-size: 18px;
+  margin: 0;
+}
+
+.mailInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.mailInputContainer input {
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.mailInputContainer button {
+  padding: 0 20px;
+  height: 40px;
+  background-color: #e3e9ee;
+  color: #322d2d;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #72562d;
+  }
+}
+
+.mailMessage {
+  font-size: 14px;
+  margin-top: 10px;
+}

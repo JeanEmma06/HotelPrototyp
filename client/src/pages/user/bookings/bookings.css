@@ -1,0 +1,68 @@
+/* Modern CSS with Effects */
+.bookings {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.bookings__title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bookings__list {
+  list-style: none;
+  padding: 0;
+}
+
+.bookings__item {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.bookings__item-id,
+.bookings__item-dates,
+.bookings__item-room,
+.bookings__item-price,
+.bookings__item-payment,
+.bookings__item-room-details,
+.bookings__item-client-info {
+  margin-top: 10px;
+}
+
+.bookings__item strong {
+  font-weight: bold;
+}
+
+.bookings__item-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.bookings__item-images img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Hover Effect */
+.bookings__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient Background */
+.bookings__item:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.bookings__item:nth-child(odd):hover {
+  background-color: #f7f7f7;
+}
