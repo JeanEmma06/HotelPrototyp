@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "prestart": "chmod +x node_modules/.bin/nodemon",
     "start": "nodemon index.js",
-    "build": "npm i"
+    "build": "npm i cjs"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +23,7 @@
     "jsonwebtoken": "^9.0.2",
     "jwt": "^0.2.0",
     "mongodb": "^6.5.0",
-    "mongoose": "^8.2.1",
+    "mongoose": "^6.10.1",
     "nodemon": "^3.1.0",
     "openssl": "^2.0.0",
     "stripe": "^14.20.0",
