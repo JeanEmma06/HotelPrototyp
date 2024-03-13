@@ -7,7 +7,7 @@
   "scripts": {
     "prestart": "chmod +x node_modules/.bin/nodemon",
     "start": "nodemon index.js",
-    "build": "npm i"
+    "build": "npm i cjs"
   },
   "keywords": [],
   "author": "",
