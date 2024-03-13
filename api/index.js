@@ -14,6 +14,10 @@ import cors from "cors";
 const app = express()
 dotenv.config()
 
+
+// Définition de l'option strictQuery avant d'établir la connexion
+mongoose.set('strictQuery', false);
+
 //check the connection between the server and 
 //the backend if is connected
 const connect = async () => {
